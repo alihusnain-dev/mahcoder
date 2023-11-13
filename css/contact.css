@@ -1,0 +1,161 @@
+.container{
+    margin: 10vh auto;
+    height: 220vh;
+}
+
+/* SECTION - 1 */
+.section1{
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.section1 a{
+    color: #121113d2;
+    text-decoration: none;
+}
+.box{
+    height: 20vh;
+    width: 25vw;
+    margin: 5vh 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    color: gray;
+}
+.box i{
+    font-size: 10vh;
+    color: var(--main-bg-color);
+    padding: 2vh 0;
+}
+.box:hover{
+    color: var(--main-bg-color);
+}
+
+/* SECTION - 2 */
+
+.section2{
+    background: url(https://images.pond5.com/black-and-white-background-code-footage-144341579_iconl.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh auto;
+    margin: 5vh auto;
+}  
+.section2 h2{
+    text-align: center;
+    margin: 3vh auto;
+    font-size: 5vh;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    background-color: #121113d2;
+}
+.input-field hr{
+    width: 10vw; color: white;
+    border: 2px solid white;
+}
+.input{
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 25px;
+    margin: 2vh auto;
+    font-size: 5vh;
+    width: 30vw;
+    height: 8vh;
+    padding: 2vh auto;
+    display: flex;
+    align-items: center;
+}
+.input:hover{
+    border-bottom: 2px solid white;
+}
+.input i{
+    padding-left: 1vw;
+}
+.input input{
+    font-family: "ubuntu";
+    border: none;
+    outline: none;
+    background: transparent;
+    height: 7vh;
+    width: 24vw;
+    margin: auto 1vw;
+    color: white;
+    font-size: 3vh;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom p a{
+    color: white;
+}
+.forgot{
+    font-size: 2vh;
+    padding-left: 7vw;
+    text-transform: capitalize;
+    font-family: "ubuntu";
+}
+.bottom button{
+    height: 5vh;
+    width: 10vw;
+    margin: 2.5vh auto;
+    font-family: "raleway";
+    border-radius: 25px;
+    background-color: lightgrey;
+    font-weight: bold;
+}
+
+/* SECTION -- 3 */
+
+.section3{
+    height: 45vh;
+    width: 70vw;
+    margin: 5vh auto;
+    
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 350px;
+    margin: auto 1vw;
+    text-transform: capitalize;
+    background-color: #fff;
+}
+.block i{
+    font-size: 10vh;
+    margin: 2vh auto;
+}
+.block h3{
+    font-size: 3vh;
+}
+.block:hover{
+    background-color: var(--main-bg-color);
+    color: white;
+    border-radius: 5px;
+}
+.block p{
+    text-transform: none;
+    font-family: "ubuntu";
+    height: 95px;
+}

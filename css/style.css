@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Tektur&family=Ubuntu&display=swap');
+
+:root {
+    --main-bg-color: #121113;
+    /* --main-bg-color: #ffffff2c; */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: 'Tektur', cursive;
+    text-transform: uppercase;
+}
+
+/* HEADER CSS*/
+header {
+    background-color: var(--main-bg-color);
+}
+
+/* LOGO CSS */
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.logo img {
+    width: 70px;
+    height: 45px;
+}
+
+/* NAV-BAR CSS */
+nav {
+    display: flex;
+}
+
+nav ul {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    font-weight: 600;
+}
+
+/* SEARCH BAR */
+.search {
+    display: flex;
+    margin-top: 19px;
+    align-items: center;
+    background-color: #ffffff38;
+    width: 360px;
+    height: 25px;
+    border-radius: 5px;
+}
+.search:hover{
+    border-bottom: 1px solid white;
+}
+.search input {
+    height: 23px;
+    width: 330px;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-family: "raleway";
+    outline: none;
+    border: none;
+    margin: 0 10px 0 23px;
+}
+
+/* Contacts: Whatsapp */
+
+.whatsapp{
+    margin: auto 100px;
+    display: flex;
+}
+.whatsapp a{
+    color: white;
+    margin: auto 0;
+}
+.whatsapp a i:hover{
+    color: white;
+}
+/* PAGE HEADING CSS */
+.head{
+    background-image: url(main.jpg);
+    height: 580px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.page-head{
+    height: 580px;
+    background-color: #121113a8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.page-head h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.page-head p{
+    font-size: 18px;
+    height: 85px;
+}
+
+/* FOOTER */
+footer {
+    height: 150px;
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+/* LINKS */
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+.links a {
+    color: white;
+}
+
+.fa-brands {
+    color: lightgray;
+    margin: 0 15px;
+    font-size: 27px;
+}
+ .fa-brands:hover{
+    color: white;
+    font-size: 30px;
+ }
+
+ /*   Scroll-Bar   */
+ ::-webkit-scrollbar{
+    width: 0;
+ }

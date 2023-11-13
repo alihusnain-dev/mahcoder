@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 85%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .message {
+            margin-top: 15px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Forgot Password</h2>
+        <p>Enter your registered email address or phone to reset your password.</p>
+        <input type="email" id="email" placeholder="Email or Phone" required>
+        <button id="resetButton">Reset Password</button>
+        <div class="message" id="message"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const resetButton = document.getElementById('resetButton');
+            const emailInput = document.getElementById('email');
+            const message = document.getElementById('message');
+
+            resetButton.addEventListener('click', function () {
+                const email = emailInput.value;
+                if (email) {
+                    // Here, you can add the logic to send a reset password link to the provided email.
+                    // This might involve making an API request to your server.
+                    // For this example, we'll just show a success message.
+                    message.innerText = 'Password reset instructions sent to your email.';
+                } else {
+                    message.innerText = 'Please enter a valid email.';
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
